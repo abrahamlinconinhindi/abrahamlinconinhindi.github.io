@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Funky Website</title>
+    <style>
+      /* background color */
+      body {
+        background-color: #333; /* dark grey */
+      }
+
+      /* title font and color */
+      h1 {
+        font-family: "Comic Sans MS", cursive; /* title font */
+        color: limegreen; /* title color */
+      }
+
+      /* text color */
+      body {
+        color: white; /* text color */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Funky Website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a funky website offering unique services and experiences.</p>
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>link to stuff</li>
+          <li>gnome images</li>
+          <li>download things</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+        <h2>Links</h2>
+        <a href="result (6).html">
+            <button class="btn btn-primary btn-lg grg">links</button>
+
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © Funky Website</p>
+    </footer>
+    <script>
+        // counter variable to track the number of times the file has been opened
+        let counter = 0;
+  
+        // function to increment the counter and check if it has reached 100 or 10000
+        function checkCounter() {
+          counter++;
+          if (counter === 100 || counter === 10000) {
+            pricePop();
+          }
+        }
+  
+        // function to display the popup window
+        function pricePop() {
+          let popup = document.createElement("div");
+          popup.setAttribute("id", "pricePop");
+          popup.style.cssText = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px;";
+  
+          let message = document.createElement("p");
+          message.innerHTML = "Congratulations! You are our " + counter + "th visitor. Click here to claim your price.";
+          popup.appendChild(message);
+  
+          let claimBtn = document.createElement("button");
+          claimBtn.innerHTML = "Claim Price";
+          claimBtn.addEventListener("click", function() {
+            alert("Thank you for claiming your price! Our team will contact you soon.");
+          });
+          popup.appendChild(claimBtn);
+  
+          let imageBox = document.createElement("img");
+          imageBox.src = "https://www.pngkey.com/png/full/81-816220_confused-smiley-face-transparent-png-emoticon-frown.png";
+          imageBox.style.cssText = "display: block; margin: auto;";
+          popup.appendChild(imageBox);
+  
+          document.body.appendChild(popup);
+        }
+  
+        // call the checkCounter function on page load
+        window.onload = checkCounter;
+  
+        // add a global variable 'debug' to the window object
+        window.debug = {
+            pricepop: pricePop // add the pricePop function to the debug object
+        }
+      </script>
+    </body>
+  </html>
+  
