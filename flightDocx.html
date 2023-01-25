@@ -32,19 +32,7 @@
           
     <script>
       
-      function search() {
-        event.preventDefault(); // this line prevents the form from submitting
-        var input = document.getElementById("searchInput").value;
-        // Code to retrieve search results from a database or API would go here
-        var results = ["Document 1", "Document 2", "Document 3"];
-        var resultDiv = document.getElementById("searchResults");
-        resultDiv.innerHTML = "";
-        for (var i = 0; i < results.length; i++) {
-          var button = document.createElement("button");
-          button.innerHTML = results[i];
-          resultDiv.appendChild(button);
-        }
-      }
+
     </script>
           
   </body>
