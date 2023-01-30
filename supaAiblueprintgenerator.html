@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="text-input">Enter Text:</label>
+      <textarea id="text-input" rows="4" cols="50"></textarea>
+      <button id="generate-btn">Generate Blueprint</button>
+    </form>
+    <div id="blueprint-container"></div>
+    
+    <script>
+      const textInput = document.querySelector("#text-input");
+      const generateBtn = document.querySelector("#generate-btn");
+      const blueprintContainer = document.querySelector("#blueprint-container");
+      
+      generateBtn.addEventListener("click", async (event) => {
+        event.preventDefault();
+        
+        const text = textInput.value;
+        const response = await $.ajax({
+          type: "POST",
+          url: "https://api.openai.com/v1/images/generations",
+          headers: {
+            "Authorization": "Bearer <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>"
+          },
+          data: {
+            model: "image-alpha-001",
+            prompt: text,
+          }
+        });
+        
+        const blueprint = response.data.url;
+        blueprintContainer.innerHTML = `<img src="${blueprint}" />`;
+      });
+    </script>
+  </body>
+</html>
