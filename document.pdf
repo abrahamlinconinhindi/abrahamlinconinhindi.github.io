@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>ToAZ INFO A Resolution Integrate For PDF Viewer</title>
+<meta name="description" content="We are help developers need Integrate REST API as viewer for PDFs. This service developed and extended from PDF JS.">
+<link rel="canonical" href="https://toaz.info/" />
+<meta property="og:url" content="https://toaz.info/" />
+<meta property="og:title" content="ToAZ INFO A Resolution Integrate For PDF Viewer" />
+<meta property="og:description" content="We are help developers need Integrate REST API as viewer for PDFs. This service developed and extended from PDF JS." />
+<meta property="og:image" content="https://toaz.info/themes/toaz/assets/img/toaz_logo.png" />
+<meta property="og:site_name" content="toaz.info" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@toaz.info" />
+<meta name="twitter:title" content="ToAZ INFO A Resolution Integrate For PDF Viewer" />
+<meta name="twitter:description" content="We are help developers need Integrate REST API as viewer for PDFs. This service developed and extended from PDF JS." />
+<meta name="twitter:image" content="https://toaz.info/themes/toaz/assets/img/toaz_logo.png" />
+<meta name="format-detection" content="telephone=no">
+<meta name="application-name" content="toaz.info" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://toaz.info/themes/toaz/assets/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://toaz.info/themes/toaz/assets/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://toaz.info/themes/toaz/assets/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://toaz.info/themes/toaz/assets/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://toaz.info/themes/toaz/assets/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://toaz.info/themes/toaz/assets/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://toaz.info/themes/toaz/assets/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://toaz.info/themes/toaz/assets/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://toaz.info/themes/toaz/assets/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://toaz.info/themes/toaz/assets/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://toaz.info/themes/toaz/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://toaz.info/themes/toaz/assets/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://toaz.info/themes/toaz/assets/img/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://toaz.info/themes/toaz/assets/img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link href='https://toaz.info/themes/toaz/assets/vendor.css' rel='stylesheet' type='text/css'>
+<link href='https://toaz.info/themes/toaz/assets/style.css' rel='stylesheet' type='text/css'>
+<script src="https://toaz.info/themes/toaz/assets/jquery-3.2.1.min.js"></script>
+<script src="https://toaz.info/themes/toaz/assets/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="header bg-dark mb-3">
+<div class="container-fluid">
+<div class="row">
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a href="https://toaz.info/" class="navbar-brand"><img src="https://toaz.info/themes/toaz/assets/img/toaz_logo.png" alt="toaz.info logo"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://toaz.info/">Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Pages
+</a>
+<div class="dropdown-menu" aria-labelledby="dropdown-1">
+<a class="dropdown-item" href="https://toaz.info/privacy-policy">Privacy Policy</a>
+<a class="dropdown-item" href="https://toaz.info/terms-of-service">Terms Of Service</a>
+<a class="dropdown-item" href="https://toaz.info/cookie-policy">Cookie Policy</a>
+<a class="dropdown-item" href="https://toaz.info/contact-us">Contact Us</a>
+<a class="dropdown-item" href="https://toaz.info/faqs">FAQs</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Documentation
+</a>
+<div class="dropdown-menu" aria-labelledby="dropdown-1">
+<a class="dropdown-item" href="https://toaz.info/doc-api-get-started">API Get Started</a>
+<a class="dropdown-item" href="https://toaz.info/doc-api-documentation">API Documentation</a>
+</div>
+</li>
+</ul>
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="https://toaz.info/docs">Docs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://toaz.info/changelog">Change Logs</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="alert alert-danger my-2">
+Access denied! Request page is not found or has been removed. </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h1>ToAZ INFO A Resolution Integrate For PDF Viewer</h1>
+<h4>We are help developers need Integrate REST API as viewer for PDFs. This service developed and extended from PDF JS.</h4>
+</div>
+<div class="col-12 my-2">
+<h4>Features of ToAZ INFO</h4>
+<div class="row">
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/annotations-777f9468.svg" alt="Annotations" width="200" class="mb-4">
+<h5>Annotations</h5>
+<p>Annotate your PDF documents without difficulty by using highlighting text, including notes, freehand ink drawing, including photographs, and greater.</p>
+</div>
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/document-editor-b55363a3.svg" alt="Document Editor" width="200" class="mb-4">
+<h5>Editor</h5>
+<p>Add, duplicate, rotate, or delete pages, or maybe create a brand new file with the useful resource of selecting pages from a few different report.</p>
+</div>
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/signatures-0b9a382d.svg" alt="Signatures" width="200" class="mb-4">
+<h5>Signatures</h5>
+<p>Sign documents and bureaucracy anywhere using your finger or stylus, then flatten and keep the record to prevent changes.</p>
+</div>
+<div class="col-12 col-md-6 my-2">
+<h4>Apple Device Features</h4>
+<ul>
+<li>Apple Pencil support<br /><span class="small text-muted">(240 Hz resolution)</span></li>
+<li>Taptic Engine support</li>
+<li>Adaptive layout for iPad multitasking</li>
+<li>Optimized for the iPad Pro</li>
+<li>Sync documents via iCloud</li>
+<li>iCloud Drive documents import and export</li>
+<li>Quick Actions<br><span class="small text-muted">(3D Touch)</span></li>
+<li>Messages Sticker Pack</li>
+</ul>
+</div>
+<div class="col-12 col-md-6 my-2">
+<h4>Android Device Features</h4>
+<ul>
+<li>Document centric task management</li>
+<li>Dynamic app shortcuts (Android 7.1)</li>
+<li>Multi-window support</li>
+<li>Chromebook support</li>
+<li>Opens PDF files from virtually any third-party app</li>
+<li>Supports all Android devices back to KitKat (version 4.4)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12">
+<h4>Read, Review, and Annotate</h4>
+<p>Whether you're operating by myself or collaborating with a group, ToAZ INFO maximizes productivity, permitting you to without problems study, evaluate, annotate, and seek PDFs.</p>
+<hr />
+</div>
+<div class="col-12">
+<h4>Review, Annotate</h4>
+<p>Annotating your PDF documents via highlighting textual content, adding notes, freehand ink drawings, images and more is simple and smooth with ToAZ INFO. When you've got completed, without difficulty percentage or print those documents too.</p>
+<ul>
+<li>Highlight text, ink drawing, including pics and notes, are just some of the numerous annotations kinds available.</li>
+<li>Using the annotation inspector, you could speedy modify the fashion of your annotations to suit you.</li>
+<li>A listing of all the annotations made makes it easy to look which parts of the file are being labored on or desires reviewing.</li>
+<li>Split-view on iPad allows you to without problems evaluation your PDF even as operating in other apps.</li>
+</ul>
+<hr />
+</div>
+<div class="col-12 my-2">
+<h4>Move, Add, Delete, Rotate, and Save</h4>
+<p>The Document Editor allows you to effortlessly upload new pages, duplicate present ones, rotate them, delete needless ones or even create a brand new report from a diffusion of pages out of another record.</p>
+<hr />
+</div>
+<div class="col-12">
+<h4>Sign Anywhere</h4>
+<p>With ToAZ INFO you can sign documents and paperwork anywhere, the use of your finger or stylus, inclusive of the Apple Pencil. Resize and move your signature as wanted on the document. When completed, flatten and keep the document to prevent any changes.</p>
+<hr />
+</div>
+<div class="col-12 my-2">
+<h4>And More</h4>
+<div class="row">
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/advanced-settings-7a09cabe.svg" alt="Advanced Settings" width="200" class="mb-4">
+<h5>Advanced Settings</h5>
+<p>Take full manipulate with settings for view modes, the thumbnail bar, seek effects, and more.</p>
+</div>
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/copy-and-paste-pages-ad78606d.svg" alt="Copy and Paste Pages" width="200" class="mb-4">
+<h5>Copy and Paste Pages<span class="badge badge-light ml-1">iOS</span></h5>
+<p>Easily copy pages to a distinct vicinity within the report, or even among documents.</p>
+</div>
+<div class="col-md-4">
+<img src="https://toaz.info/themes/toaz/assets/img/freeform-rotation-a1407427.svg" alt="Signatures" width="200" class="mb-4">
+<h5>Rotation</h5>
+<p>Annotate plans, maps, and turned around pages with 360° free form rotation for annotations.</p>
+</div>
+</div>
+<hr />
+</div>
+</div></div>
+<footer class="bg-primary mt-3">
+<div class="container-fluid">
+<div class="row gutter-3">
+<div class="col-12 col-md-6 text-white">
+<p class="mb-4">Copyright © 2023 TOAZ.INFO. All rights reserved.</p>
+<div class="row">
+<div class="col">
+<ul class="list-group list-group-minimal">
+<li class="list-group-item"><a href="https://toaz.info/docs" class="link">Training</a></li>
+<li class="list-group-item"><a href="https://toaz.info/doc-api-get-started" class="link">Integrations</a></li>
+<li class="list-group-item"><a href="https://toaz.info/doc-api-documentation" class="link">REST API</a></li>
+<li class="list-group-item"><a href="https://toaz.info/faqs" class="link">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div class="col">
+<ul class="list-group list-group-minimal">
+<li class="list-group-item"><a href="https://toaz.info/contact-us" class="link">Contact Us</a></li>
+<li class="list-group-item"><a href="https://toaz.info/privacy-policy" class="link">Privacy Policy</a></li>
+<li class="list-group-item"><a href="https://toaz.info/terms-of-service" class="link">Terms of Service</a></li>
+<li class="list-group-item"><a href="https://toaz.info/cookie-policy" class="link">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-2 ml-auto text-md-right">
+<div class="dropdown">
+<button class="btn btn-inverted btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+English
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<a class="dropdown-item" href="#">French</a>
+<a class="dropdown-item" href="#">German</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176701168-1"></script>
+<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+		    dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-176701168-1');
+	    </script>
+</body>
+</html>
