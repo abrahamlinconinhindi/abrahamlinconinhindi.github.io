@@ -1,0 +1,67 @@
+/* background color */
+body {
+    background-color: #333; /* dark grey */
+  }
+  
+  /* title font and color */
+  h1 {
+    font-family: "Comic Sans MS", cursive; /* title font */
+    color: limegreen; /* title color */
+  }
+  
+  /* text color */
+  body {
+    color: white; /* text color */
+  }
+  
+  /* navigation links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: limegreen;
+  }
+  
+  /* form label */
+  form label {
+    display: inline-block;
+    width: 80px;
+  }
+  
+  /* form input */
+  form input[type="text"], form input[type="email"], form textarea {
+    width: 250px;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  form input[type="submit"] {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #28a745
+  
